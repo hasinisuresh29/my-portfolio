@@ -1,0 +1,1409 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Hasini S - Portfolio of a Computer Science & Data Science Graduate and Aspiring Software Engineer.">
+  <meta name="keywords" content="Hasini S, , Data Science, Python, C, Java, SQL, Portfolio, Fresher, Pixel Art">
+  <meta name="author" content="Hasini S">
+  <title>Hasini S Data Science Graduate</title>
+
+  <!-- Google Fonts: Pixelify Sans, Press Start 2P, Inter & Outfit -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&family=Press+Start+2P&family=Inter:wght@300;400;500;600;700&family=Outfit:wght@500;600;700;800&display=swap"
+    rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- Accessible Skip Link for Keyboard & Screen Reader Users -->
+  <a href="#main-content" class="skip-to-content-link">Skip to main content</a>
+
+  <!-- Mobile Floating Pixel Menu Toggle Button -->
+  <button id="vertical-nav-toggle" class="pixel-mobile-nav-btn" aria-label="Toggle Navigation Menu"
+    aria-controls="vertical-navbar" aria-expanded="false" type="button">
+    <span class="pixel-nav-btn-icon" aria-hidden="true">🎮</span>
+    <span class="pixel-nav-btn-text">MENU</span>
+  </button>
+
+  <!-- Backdrop overlay for mobile menu drawer -->
+  <div id="vertical-nav-backdrop" class="pixel-nav-backdrop" aria-hidden="true"></div>
+
+  <!-- ========================================================= -->
+  <!-- VERTICAL NAVIGATION BAR (LEFT SIDE OF SCREEN)             -->
+  <!-- Accessible, responsive, pixel art styled HUD sidebar       -->
+  <!-- ========================================================= -->
+  <aside id="vertical-navbar" class="pixel-vertical-navbar" aria-label="Main Navigation">
+    <div class="sidebar-inner">
+      <!-- Sidebar Top: Brand & Player Level Indicator -->
+      <div class="sidebar-header">
+        <a href="#hero" class="sidebar-brand" aria-label="Hasini S Home">
+          <span class="brand-brackets">&lt;</span><span class="brand-text">Hasini</span><span
+            class="brand-accent">.S</span><span class="brand-brackets">/&gt;</span>
+        </a>
+        <div class="sidebar-player-status">
+          <span class="pixel-status-led" aria-hidden="true"></span>
+          <span class="pixel-status-text">LVL 1 &bull; ONLINE</span>
+        </div>
+        <!-- Mobile Close Button -->
+        <button id="sidebar-close-btn" class="sidebar-close-btn" aria-label="Close Navigation Menu" type="button">
+          ✕
+        </button>
+      </div>
+
+      <!-- Main Navigation Menu List -->
+      <nav class="sidebar-nav" aria-label="Sections">
+        <ul class="sidebar-menu-list">
+          <li class="sidebar-menu-item">
+            <a href="#hero" class="sidebar-nav-link active" data-section="hero">
+              <span class="sidebar-link-caret" aria-hidden="true">▶</span>
+              <span class="sidebar-link-icon" aria-hidden="true">🏠</span>
+              <span class="sidebar-link-text">Home</span>
+            </a>
+          </li>
+          <li class="sidebar-menu-item">
+            <a href="#about" class="sidebar-nav-link" data-section="about">
+              <span class="sidebar-link-caret" aria-hidden="true">▶</span>
+              <span class="sidebar-link-icon" aria-hidden="true">👤</span>
+              <span class="sidebar-link-text">About Me</span>
+            </a>
+          </li>
+          <li class="sidebar-menu-item">
+            <a href="#skills" class="sidebar-nav-link" data-section="skills">
+              <span class="sidebar-link-caret" aria-hidden="true">▶</span>
+              <span class="sidebar-link-icon" aria-hidden="true">⚡</span>
+              <span class="sidebar-link-text">Skills</span>
+            </a>
+          </li>
+          <li class="sidebar-menu-item">
+            <a href="#timeline" class="sidebar-nav-link" data-section="timeline">
+              <span class="sidebar-link-caret" aria-hidden="true">▶</span>
+              <span class="sidebar-link-icon" aria-hidden="true">⏳</span>
+              <span class="sidebar-link-text">Timeline</span>
+            </a>
+          </li>
+          <li class="sidebar-menu-item">
+            <a href="#projects" class="sidebar-nav-link" data-section="projects">
+              <span class="sidebar-link-caret" aria-hidden="true">▶</span>
+              <span class="sidebar-link-icon" aria-hidden="true">⚔️</span>
+              <span class="sidebar-link-text">Projects</span>
+            </a>
+          </li>
+          <li class="sidebar-menu-item">
+            <a href="#testimonials" class="sidebar-nav-link" data-section="testimonials">
+              <span class="sidebar-link-caret" aria-hidden="true">▶</span>
+              <span class="sidebar-link-icon" aria-hidden="true">💬</span>
+              <span class="sidebar-link-text">Testimonials</span>
+            </a>
+          </li>
+          <li class="sidebar-menu-item">
+            <a href="#chat" class="sidebar-nav-link" data-section="chat">
+              <span class="sidebar-link-caret" aria-hidden="true">▶</span>
+              <span class="sidebar-link-icon" aria-hidden="true">👾</span>
+              <span class="sidebar-link-text">Chat</span>
+              <span class="sidebar-new-pill">NEW</span>
+            </a>
+          </li>
+          <li class="sidebar-menu-item">
+            <a href="#contact" class="sidebar-nav-link" data-section="contact">
+              <span class="sidebar-link-caret" aria-hidden="true">▶</span>
+              <span class="sidebar-link-icon" aria-hidden="true">✉️</span>
+              <span class="sidebar-link-text">Contact</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- Sidebar Footer: Resume Download & Social Shortcuts -->
+      <div class="sidebar-footer">
+        <a href="Hasini_Resume.pdf" class="sidebar-resume-btn pixel-btn" download
+          aria-label="Download Hasini's Resume (PDF)">
+          <span aria-hidden="true">💾</span> RESUME.PDF
+        </a>
+        <div class="sidebar-social-row">
+          <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="sidebar-social-chip"
+            aria-label="GitHub Profile">
+            GH
+          </a>
+          <a href="https://linkedin.com/in/hasini-suresh-9b97a1380" target="_blank" rel="noopener noreferrer"
+            class="sidebar-social-chip" aria-label="LinkedIn Profile">
+            IN
+          </a>
+          <a href="mailto:hasinisuresh2979@gmail.com" class="sidebar-social-chip" aria-label="Email Hasini">
+            MAIL
+          </a>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ========================================================= -->
+  <!-- TOP UTILITY BAR (RESPONSIVE HEADER) -->
+  <!-- ========================================================= -->
+  <header class="site-header" id="header">
+    <div class="header-container container">
+      <!-- Brand Logo / Name for Mobile & Top Bar -->
+      <a href="#hero" class="brand-logo" aria-label="Hasini S Portfolio Home">
+        <span class="logo-code">&lt;</span>Hasini<span class="logo-accent">.S</span><span class="logo-code">/&gt;</span>
+      </a>
+
+      <!-- Header Actions (Night Mode Toggle + Resume CTA + Menu Button) -->
+      <div class="header-actions">
+        <!-- Resume Quick Download Link -->
+        <a href="Hasini_Resume.pdf" class="btn btn-sm btn-resume" download aria-label="Download Hasini's Resume">
+          Resume 📄
+        </a>
+
+        <!-- ========================================================= -->
+        <!-- NIGHT MODE TOGGLE PLACEHOLDER -->
+        <!-- ========================================================= -->
+        <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle Night Mode" type="button"
+          title="Toggle theme">
+          <span class="theme-icon sun-icon" aria-hidden="true">☀️</span>
+          <span class="theme-icon moon-icon" aria-hidden="true">🌙</span>
+          <span class="sr-only">Toggle Night Mode</span>
+        </button>
+
+        <!-- Top Bar Mobile Menu Trigger (triggers vertical sidebar) -->
+        <button id="mobile-menu-toggle" class="mobile-menu-btn" aria-label="Open Navigation Menu" aria-expanded="false"
+          type="button">
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ========================================================= -->
+  <!-- MAIN CONTENT AREA -->
+  <!-- Semantic main wrapper containing all core portfolio sections -->
+  <!-- ========================================================= -->
+  <main id="main-content">
+
+    <!-- ======================================================= -->
+    <!-- HERO SECTION (PIXEL ART STYLE DESIGN) -->
+    <!-- Welcomes visitors with a title, brief tagline & RPG status HUD -->
+    <!-- Features background image: WhatsApp Image 2026-10-06 at 8.26.53 PM.jpeg -->
+    <!-- ======================================================= -->
+    <section id="hero" class="section hero-section pixel-hero" aria-labelledby="hero-title">
+      <div class="pixel-crt-scanlines" aria-hidden="true"></div>
+
+      <div class="container hero-container pixel-hero-container">
+        <!-- Hero Left Column: Pixel Dialogue Box, Title, Tagline, CTAs & Mode Switcher -->
+        <div class="hero-content pixel-hero-content">
+          <!-- Pixel Dialogue Welcome Banner -->
+          <div class="pixel-dialogue-box">
+            <span class="pixel-blink-caret">&gt;</span>
+            <span class="pixel-dialogue-text">WELCOME VISITOR // INITIALIZING SYSTEM...</span>
+          </div>
+
+          <!-- Hero Main Title & Badge -->
+          <div class="pixel-title-wrapper">
+            <h1 id="hero-title" class="pixel-hero-heading">
+              HI, I'M <span class="pixel-highlight-text">HASINI S</span>
+              <span class="pixel-cursor" aria-hidden="true">&#9608;</span>
+            </h1>
+            <p class="pixel-hero-role">
+              &#128736; SOFTWARE ENGINEER &bull; B.E. CSE (DATA SCIENCE)
+            </p>
+          </div>
+
+          <!-- Brief Welcoming Tagline -->
+          <p class="pixel-hero-tagline">
+            Leveling up through code! Armed with Python, C, SQL, and Data Science foundations, I transform complex
+            algorithms into responsive, real-world digital solutions.
+          </p>
+
+          <!-- Interactive Pixel Theme Toggle Widget (Uses CSS Media Query Auto-Detection) -->
+          <div class="pixel-theme-hud-widget" role="region" aria-label="Theme Controller">
+            <div class="pixel-hud-label">
+              <span class="pixel-icon">🕹️</span> THEME CONTROLLER:
+            </div>
+            <button id="hero-theme-toggle" class="pixel-btn pixel-theme-toggle-btn" type="button"
+              aria-label="Toggle Night Mode">
+              <span class="pixel-theme-status-indicator" aria-hidden="true"></span>
+              <span class="pixel-theme-status-text">DETECTING THEME...</span>
+              <span class="pixel-shortcut-hint">[CLICK TO SWITCH]</span>
+            </button>
+          </div>
+
+          <!-- Pixel Art Action Buttons -->
+          <div class="pixel-cta-group">
+            <a href="#projects" class="pixel-btn pixel-btn-primary">
+              <span class="pixel-btn-icon">⚔️</span> EXPLORE QUESTS
+            </a>
+            <a href="Hasini_Resume.pdf" class="pixel-btn pixel-btn-secondary" download>
+              <span class="pixel-btn-icon">💾</span> DOWNLOAD RESUME
+            </a>
+            <a href="#contact" class="pixel-btn pixel-btn-outline">
+              <span class="pixel-btn-icon">✉️</span> CONTACT ME
+            </a>
+          </div>
+
+          <!-- Quick Pixel Contact Badges -->
+          <div class="pixel-contact-badges">
+            <a href="mailto:hasinisuresh2979@gmail.com" class="pixel-mini-badge" title="Send Email">
+              <span class="badge-icon">📧</span> hasinisuresh2979@gmail.com
+            </a>
+            <a href="tel:+919036138340" class="pixel-mini-badge" title="Call directly">
+              <span class="badge-icon">📞</span> +91 9036138340
+            </a>
+          </div>
+        </div>
+
+        <!-- Hero Right Column: 8-bit Character Status Card with Avatar Photo -->
+        <div class="hero-media pixel-hero-media">
+          <div class="pixel-character-card">
+            <!-- Retro Arcade Window Top Bar -->
+            <div class="pixel-card-header">
+              <div class="pixel-card-title">
+                <span class="pixel-heart">♥</span> PLAYER_01: HASINI_S
+              </div>
+              <div class="pixel-window-controls">
+                <span class="pixel-control-square"></span>
+                <span class="pixel-control-square"></span>
+                <span class="pixel-control-square"></span>
+              </div>
+            </div>
+
+            <!-- Portrait Frame with Provided Photo -->
+            <div class="pixel-avatar-frame">
+              <div class="pixel-avatar-overlay"></div>
+              <img src="images.jpeg" alt="Hasini S - Software Engineer and Data Science Graduate"
+                class="pixel-avatar-img" width="300" height="360">
+              <div class="pixel-online-tag">
+                <span class="pixel-dot"></span> LVL 1 FRESHER
+              </div>
+            </div>
+
+            <!-- 8-Bit RPG Status Metrics -->
+            <div class="pixel-stats-panel">
+              <div class="pixel-stat-row">
+                <span class="stat-name">CLASS:</span>
+                <span class="stat-value">DATA SCIENTIST &bull; DEV</span>
+              </div>
+              <div class="pixel-stat-row">
+                <span class="stat-name">DEGREE:</span>
+                <span class="stat-value">B.E. CSE @ AIT</span>
+              </div>
+              <div class="pixel-stat-row">
+                <span class="stat-name">CGPA [XP]:</span>
+                <div class="pixel-progress-wrap">
+                  <div class="pixel-progress-bar" style="width: 78%;" title="CGPA 7.8/10"></div>
+                  <span class="progress-label">7.8 / 10.0</span>
+                </div>
+              </div>
+              <div class="pixel-stat-row">
+                <span class="stat-name">STATUS:</span>
+                <span class="stat-value stat-ready">READY FOR WORK</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================= -->
+    <!-- ABOUT SECTION PLACEHOLDER -->
+    <!-- Placeholder: Detailed background, educational profile & focus -->
+    <!-- ======================================================= -->
+    <!-- ======================================================= -->
+    <!-- ABOUT ME SECTION -->
+    <!-- Clean, minimalistic design with pixel-art avatar & bio  -->
+    <!-- Features career highlights and personal interests       -->
+    <!-- ======================================================= -->
+    <section id="about" class="section about-section" aria-labelledby="about-title">
+      <div class="container">
+        <!-- Section Header -->
+        <header class="section-header">
+          <p class="section-tag">01. Who I Am</p>
+          <h2 id="about-title" class="section-title">About Me</h2>
+          <p class="section-subtitle">A brief glimpse into my background, engineering philosophy, and what drives me.
+          </p>
+        </header>
+
+        <div class="about-minimal-layout">
+          <!-- Left Column: Pixel-Art Avatar & Quick Identity Card -->
+          <div class="about-avatar-col">
+            <div class="about-avatar-card">
+              <div class="about-avatar-window-bar">
+                <span class="avatar-window-title">AVATAR.PNG</span>
+                <span class="avatar-window-dot"></span>
+              </div>
+              <div class="about-avatar-image-wrap">
+                <img src="pixel_avatar.jpg" alt="Hasini S - Software Engineer Pixel Art Avatar"
+                  class="about-pixel-avatar-img" width="300" height="300">
+                <div class="avatar-status-pill">
+                  <span class="status-indicator-dot"></span> AVAILABLE FOR HIRE
+                </div>
+              </div>
+
+              <div class="about-profile-snapshot">
+                <h3 class="snapshot-name">Hasini S</h3>
+                <p class="snapshot-title">Software Engineer &bull; Data Science</p>
+                <div class="snapshot-details-list">
+                  <div class="snapshot-detail-item">
+                    <span class="detail-label">EDUCATION:</span>
+                    <span class="detail-val">B.E. CSE (Data Science)</span>
+                  </div>
+                  <div class="snapshot-detail-item">
+                    <span class="detail-label">INSTITUTE:</span>
+                    <span class="detail-val">AIT, Chikkamagaluru</span>
+                  </div>
+                  <div class="snapshot-detail-item">
+                    <span class="detail-label">CGPA:</span>
+                    <span class="detail-val val-highlight">7.8 / 10.0</span>
+                  </div>
+                </div>
+                <a href="Hasini_Resume.pdf" class="pixel-btn about-resume-btn" download
+                  aria-label="Download Full Resume">
+                  <span aria-hidden="true">📄</span> DOWNLOAD RESUME
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column: Bio, Career Highlights & Personal Interests -->
+          <div class="about-content-col">
+            <!-- Short Bio -->
+            <article class="about-bio-box">
+              <h3 class="about-subheading">
+                <span class="subheading-icon">👋</span> Engineering with Curiosity &amp; Precision
+              </h3>
+              <p class="about-bio-text">
+                I am a recent engineering graduate with a Bachelor of Engineering in <strong>Computer Science and
+                  Engineering (Data Science)</strong> from <em>Adichunchanagiri Institute of Technology,
+                  Chikkamagaluru</em>, graduating with a <strong>7.8 CGPA</strong>.
+              </p>
+              <p class="about-bio-text">
+                My passion lies at the intersection of logical programming, data-driven reasoning, and user-centric
+                software design. With hands-on proficiency in <strong>Python, C, SQL</strong>, and an understanding of
+                <strong>Java basics</strong> and <strong>Object-Oriented Programming</strong>, I focus on turning
+                algorithmic ideas into practical, maintainable code.
+              </p>
+              <p class="about-bio-text">
+                As a motivated fresher, I am excited to kick-start my software engineering journey through internships
+                and entry-level positions where I can contribute to meaningful codebases, collaborate with experienced
+                engineers, and continuously elevate my technical craft.
+              </p>
+            </article>
+
+            <!-- Career Highlights -->
+            <div class="about-section-block">
+              <h4 class="block-title">
+                <span class="block-icon">🌟</span> Career &amp; Academic Highlights
+              </h4>
+              <div class="highlights-minimal-grid">
+                <div class="highlight-minimal-card">
+                  <div class="card-bullet-icon">🎓</div>
+                  <div class="card-info">
+                    <h5>Consistent Academic Record</h5>
+                    <p>Graduated with a <strong>7.8 CGPA</strong> in B.E. Computer Science &amp; Engineering with a
+                      specialization in Data Science.</p>
+                    <div class="highlight-minimal-card">
+                      <div class="card-bullet-icon">⚡</div>
+                      <div class="card-info">
+                        <h5>Full-Stack &amp; Data Readiness</h5>
+                        <p>Actively expanding full-stack skills with semantic HTML5, CSS3, JavaScript, and backend REST
+                          concepts.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Personal Interests -->
+                <div class="about-section-block">
+                  <h4 class="block-title">
+                    <span class="block-icon">🎯</span> Personal Interests &amp; Passions
+                  </h4>
+                  <p class="interests-intro">Beyond writing code and debugging, here are the topics and activities that
+                    inspire me:</p>
+                  <li class="interest-tag"><span class="interest-emoji">🧩</span> Algorithmic Problem Solving</li>
+                  <li class="interest-tag"><span class="interest-emoji">🌐</span> Exploring Emerging Web Frameworks
+                  </li>
+                  <li class="interest-tag"><span class="interest-emoji">📚</span> Technical Reading &amp; Tech
+                    Podcasts
+                  </li>
+                  <li class="interest-tag"><span class="interest-emoji">🤝</span> Collaborative Team Hackathons</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+    </section>
+
+    <!-- ======================================================= -->
+    <!-- SKILLS SECTION -->
+    <!-- Visual pixel-art skill showcase with animated progress bars,  -->
+    <!-- icon cards, proficiency levels & hover micro-animations       -->
+    <!-- ======================================================= -->
+    <section id="skills" class="section skills-section" aria-labelledby="skills-title">
+      <div class="container">
+        <header class="section-header">
+          <p class="section-tag">02. Capabilities</p>
+          <h2 id="skills-title" class="section-title">Technical Skills</h2>
+          <p class="section-subtitle">My programming proficiencies, tools, and ongoing technical learning — RPG-style XP
+            breakdown.</p>
+        </header>
+
+        <!-- Pixel Terminal Header Bar for the whole section -->
+        <div class="skills-pixel-header" aria-hidden="true">
+          <span class="skills-terminal-prefix">&gt;&gt;</span>
+          <span class="skills-terminal-text">LOADING_SKILL_TREE.DAT...</span>
+          <span class="skills-terminal-dots"><span>.</span><span>.</span><span>.</span></span>
+        </div>
+
+        <!-- ────────────────────────────────────────────────────── -->
+        <!-- MAIN SKILLS GRID: 4 Category Cards with XP bars       -->
+        <!-- Each card = a skill category (Programming, DB, etc.)  -->
+        <!-- ────────────────────────────────────────────────────── -->
+        <div class="skills-main-grid">
+
+          <!-- ── Card 1: Programming Languages ─────────────────── -->
+          <!-- Python & C are primary skills shown with high XP    -->
+          <article class="pixel-skill-card" role="region" aria-labelledby="skill-cat-prog">
+            <div class="pixel-skill-card-header">
+              <!-- Animated icon bounces on hover -->
+              <span class="psk-icon psk-icon--code" aria-hidden="true">💻</span>
+              <div class="psk-header-text">
+                <h3 id="skill-cat-prog" class="psk-title">Programming Languages</h3>
+                <span class="psk-subtitle">Core Competencies</span>
+              </div>
+              <!-- Badge showing count of skills -->
+              <span class="psk-count-badge">4 Skills</span>
+            </div>
+
+            <div class="psk-skills-list">
+              <!-- Python: primary skill → 85% XP -->
+              <div class="psk-skill-row">
+                <div class="psk-skill-meta">
+                  <span class="psk-skill-name">🐍 Python</span>
+                  <span class="psk-skill-level psk-level--pro">PROFICIENT</span>
+                </div>
+                <!-- XP-style progress bar, animated via JS on scroll -->
+                <div class="psk-xp-track" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"
+                  aria-label="Python proficiency 85%">
+                  <div class="psk-xp-fill" data-width="85" style="width:0%">
+                    <span class="psk-xp-shimmer" aria-hidden="true"></span>
+                  </div>
+                  <span class="psk-xp-label">85 XP</span>
+                </div>
+              </div>
+
+              <!-- C: primary skill → 80% XP -->
+              <div class="psk-skill-row">
+                <div class="psk-skill-meta">
+                  <span class="psk-skill-name">⚡ C</span>
+                  <span class="psk-skill-level psk-level--pro">PROFICIENT</span>
+                </div>
+                <div class="psk-xp-track" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"
+                  aria-label="C proficiency 80%">
+                  <div class="psk-xp-fill" data-width="80" style="width:0%">
+                    <span class="psk-xp-shimmer" aria-hidden="true"></span>
+                  </div>
+                  <span class="psk-xp-label">80 XP</span>
+                </div>
+              </div>
+
+              <!-- Java (Basics) → 45% XP -->
+              <div class="psk-skill-row">
+                <div class="psk-skill-meta">
+                  <span class="psk-skill-name">☕ Java</span>
+                  <span class="psk-skill-level psk-level--basic">BASICS</span>
+                </div>
+                <div class="psk-xp-track" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100"
+                  aria-label="Java proficiency 45%">
+                  <div class="psk-xp-fill psk-xp-fill--cyan" data-width="45" style="width:0%">
+                    <span class="psk-xp-shimmer" aria-hidden="true"></span>
+                  </div>
+                  <span class="psk-xp-label">45 XP</span>
+                </div>
+              </div>
+
+              <!-- OOP → 70% XP (conceptual understanding) -->
+              <div class="psk-skill-row">
+                <div class="psk-skill-meta">
+                  <span class="psk-skill-name">🧩 OOP</span>
+                  <span class="psk-skill-level psk-level--intermediate">INTERMEDIATE</span>
+                </div>
+                <div class="psk-xp-track" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"
+                  aria-label="OOP proficiency 70%">
+                  <div class="psk-xp-fill psk-xp-fill--purple" data-width="70" style="width:0%">
+                    <span class="psk-xp-shimmer" aria-hidden="true"></span>
+                  </div>
+                  <span class="psk-xp-label">70 XP</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card footer: note + pill badges for quick scan -->
+            <div class="psk-card-footer">
+              <p class="psk-footer-note">Problem solving, algorithm design & structured programming.</p>
+              <div class="psk-icon-badges" aria-hidden="true">
+                <span class="psk-icon-badge">🐍</span>
+                <span class="psk-icon-badge">⚡</span>
+                <span class="psk-icon-badge">☕</span>
+                <span class="psk-icon-badge">🧩</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- ── Card 2: Database Management ───────────────────── -->
+          <!-- SQL basics shown with appropriate entry-level XP    -->
+          <article class="pixel-skill-card" role="region" aria-labelledby="skill-cat-db">
+            <div class="pixel-skill-card-header">
+              <span class="psk-icon psk-icon--db" aria-hidden="true">🗄️</span>
+              <div class="psk-header-text">
+                <h3 id="skill-cat-db" class="psk-title">Database Management</h3>
+                <span class="psk-subtitle">Data & Queries</span>
+              </div>
+              <span class="psk-count-badge">4 Skills</span>
+            </div>
+
+            <div class="psk-skills-list">
+              <!-- SQL (Basics) → 65% XP -->
+              <div class="psk-skill-row">
+                <div class="psk-skill-meta">
+                  <span class="psk-skill-name">📊 SQL</span>
+                  <span class="psk-skill-level psk-level--intermediate">INTERMEDIATE</span>
+                </div>
+                <div class="psk-xp-track" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"
+                  aria-label="SQL proficiency 65%">
+                  <div class="psk-xp-fill" data-width="65" style="width:0%">
+                    <span class="psk-xp-shimmer" aria-hidden="true"></span>
+                  </div>
+                  <span class="psk-xp-label">65 XP</span>
+                </div>
+              </div>
+
+              <!-- Relational DB Concepts → 60% XP -->
+              <div class="psk-skill-row">
+                <div class="psk-skill-meta">
+                  <span class="psk-skill-name">🔗 Relational DB</span>
+                  <span class="psk-skill-level psk-level--intermediate">INTERMEDIATE</span>
+                </div>
+                <div class="psk-xp-track" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"
+                  aria-label="Relational DB proficiency 60%">
+                  <div class="psk-xp-fill psk-xp-fill--purple" data-width="60" style="width:0%">
+                    <span class="psk-xp-shimmer" aria-hidden="true"></span>
+                  </div>
+                  <span class="psk-xp-label">60 XP</span>
+                </div>
+              </div>
+
+              <!-- CRUD Operations → 70% XP -->
+              <div class="psk-skill-row">
+                <div class="psk-skill-meta">
+                  <span class="psk-skill-name">⚙️ CRUD Ops</span>
+                  <span class="psk-skill-level psk-level--intermediate">INTERMEDIATE</span>
+                </div>
+                <div class="psk-xp-track" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"
+                  aria-label="CRUD proficiency 70%">
+                  <div class="psk-xp-fill psk-xp-fill--cyan" data-width="70" style="width:0%">
+                    <span class="psk-xp-shimmer" aria-hidden="true"></span>
+                  </div>
+                  <span class="psk-xp-label">70 XP</span>
+                </div>
+              </div>
+
+              <!-- Query Design → 60% XP -->
+              <div class="psk-skill-row">
+                <div class="psk-skill-meta">
+                  <span class="psk-skill-name">🔍 Query Design</span>
+                  <span class="psk-skill-level psk-level--intermediate">INTERMEDIATE</span>
+                </div>
+                <div class="psk-xp-track" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"
+                  aria-label="Query design proficiency 60%">
+                  <div class="psk-xp-fill" data-width="60" style="width:0%">
+                    <span class="psk-xp-shimmer" aria-hidden="true"></span>
+                  </div>
+                  <span class="psk-xp-label">60 XP</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="psk-card-footer">
+              <p class="psk-footer-note">Relational schemas, table relationships & database querying.</p>
+              <div class="psk-icon-badges" aria-hidden="true">
+                <span class="psk-icon-badge">📊</span>
+                <span class="psk-icon-badge">🔗</span>
+                <span class="psk-icon-badge">⚙️</span>
+                <span class="psk-icon-badge">🔍</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- ── Card 3: Frontend Development (Learning) ─────── -->
+          <!-- Shows currently-learning status with lower XP bars  -->
+          <article class="pixel-skill-card pixel-skill-card--learning" role="region" aria-labelledby="skill-cat-fe">
+            <div class="pixel-skill-card-header">
+              <span class="psk-icon psk-icon--frontend" aria-hidden="true">🎨</span>
+              <div class="psk-header-text">
+                <h3 id="skill-cat-fe" class="psk-title">Frontend Development</h3>
+                <!-- Animated "currently learning" badge -->
+                <span class="psk-subtitle psk-subtitle--learning">⚡ CURRENTLY LEARNING</span>
+              </div>
+              <span class="psk-count-badge psk-count-badge--learning">ACTIVE</span>
+            </div>
+
+            <div class="psk-skills-list">
+              <!-- HTML5 → 70% (building this portfolio!) -->
+              <div class="psk-skill-row">
+                <div class="psk-skill-meta">
+                  <span class="psk-skill-name">🌐 HTML5</span>
+                  <span class="psk-skill-level psk-level--intermediate">INTERMEDIATE</span>
+                </div>
+                <div class="psk-xp-track" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"
+                  aria-label="HTML5 proficiency 70%">
+                  <div class="psk-xp-fill psk-xp-fill--green" data-width="70" style="width:0%">
+                    <span class="psk-xp-shimmer" aria-hidden="true"></span>
+                  </div>
+                  <span class="psk-xp-label">70 XP</span>
+                </div>
+              </div>
+
+              <!-- CSS3 → 65% -->
+              <div class="psk-skill-row">
+                <div class="psk-skill-meta">
+                  <span class="psk-skill-name">🎨 CSS3</span>
+                  <span class="psk-skill-level psk-level--intermediate">INTERMEDIATE</span>
+                </div>
+                <div class="psk-xp-track" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"
+                  aria-label="CSS3 proficiency 65%">
+                  <div class="psk-xp-fill psk-xp-fill--cyan" data-width="65" style="width:0%">
+                    <span class="psk-xp-shimmer" aria-hidden="true"></span>
+                  </div>
+                  <span class="psk-xp-label">65 XP</span>
+                </div>
+              </div>
+
+              <!-- JavaScript → 40% (basics) -->
+              <div class="psk-skill-row">
+                <div class="psk-skill-meta">
+                  <span class="psk-skill-name">📜 JavaScript</span>
+                  <span class="psk-skill-level psk-level--basic">BASICS</span>
+                </div>
+                <div class="psk-xp-track" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"
+                  aria-label="JavaScript proficiency 40%">
+                  <div class="psk-xp-fill psk-xp-fill--purple" data-width="40" style="width:0%">
+                    <span class="psk-xp-shimmer" aria-hidden="true"></span>
+                  </div>
+                  <span class="psk-xp-label">40 XP</span>
+                </div>
+              </div>
+
+              <!-- Flexbox / Grid → 60% -->
+              <div class="psk-skill-row">
+                <div class="psk-skill-meta">
+                  <span class="psk-skill-name">📐 Flexbox/Grid</span>
+                  <span class="psk-skill-level psk-level--intermediate">INTERMEDIATE</span>
+                </div>
+                <div class="psk-xp-track" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"
+                  aria-label="Flexbox Grid proficiency 60%">
+                  <div class="psk-xp-fill psk-xp-fill--green" data-width="60" style="width:0%">
+                    <span class="psk-xp-shimmer" aria-hidden="true"></span>
+                  </div>
+                  <span class="psk-xp-label">60 XP</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="psk-card-footer">
+              <p class="psk-footer-note">Actively building interactive projects and responsive web interfaces.</p>
+              <div class="psk-icon-badges" aria-hidden="true">
+                <span class="psk-icon-badge">🌐</span>
+                <span class="psk-icon-badge">🎨</span>
+                <span class="psk-icon-badge">📜</span>
+                <span class="psk-icon-badge">📐</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- ── Card 4: Backend & Core Concepts (Learning) ───── -->
+          <!-- Data science & backend fundamentals in progress      -->
+          <article class="pixel-skill-card pixel-skill-card--learning" role="region" aria-labelledby="skill-cat-be">
+            <div class="pixel-skill-card-header">
+              <span class="psk-icon psk-icon--backend" aria-hidden="true">⚙️</span>
+              <div class="psk-header-text">
+                <h3 id="skill-cat-be" class="psk-title">Backend & Core Concepts</h3>
+                <span class="psk-subtitle psk-subtitle--learning">⚡ CURRENTLY LEARNING</span>
+              </div>
+              <span class="psk-count-badge psk-count-badge--learning">ACTIVE</span>
+            </div>
+
+            <div class="psk-skills-list">
+              <!-- Data Science Fundamentals → 60% -->
+              <div class="psk-skill-row">
+                <div class="psk-skill-meta">
+                  <span class="psk-skill-name">📈 Data Science</span>
+                  <span class="psk-skill-level psk-level--intermediate">INTERMEDIATE</span>
+                </div>
+                <div class="psk-xp-track" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"
+                  aria-label="Data Science proficiency 60%">
+                  <div class="psk-xp-fill" data-width="60" style="width:0%">
+                    <span class="psk-xp-shimmer" aria-hidden="true"></span>
+                  </div>
+                  <span class="psk-xp-label">60 XP</span>
+                </div>
+              </div>
+
+              <!-- Backend Architecture → 30% (learning) -->
+              <div class="psk-skill-row">
+                <div class="psk-skill-meta">
+                  <span class="psk-skill-name">🏗️ Backend Arch.</span>
+                  <span class="psk-skill-level psk-level--basic">LEARNING</span>
+                </div>
+                <div class="psk-xp-track" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"
+                  aria-label="Backend Architecture proficiency 30%">
+                  <div class="psk-xp-fill psk-xp-fill--cyan" data-width="30" style="width:0%">
+                    <span class="psk-xp-shimmer" aria-hidden="true"></span>
+                  </div>
+                  <span class="psk-xp-label">30 XP</span>
+                </div>
+              </div>
+
+              <!-- DSA → 55% -->
+              <div class="psk-skill-row">
+                <div class="psk-skill-meta">
+                  <span class="psk-skill-name">🌳 DS &amp; Algorithms</span>
+                  <span class="psk-skill-level psk-level--intermediate">INTERMEDIATE</span>
+                </div>
+                <div class="psk-xp-track" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"
+                  aria-label="Data Structures proficiency 55%">
+                  <div class="psk-xp-fill psk-xp-fill--purple" data-width="55" style="width:0%">
+                    <span class="psk-xp-shimmer" aria-hidden="true"></span>
+                  </div>
+                  <span class="psk-xp-label">55 XP</span>
+                </div>
+              </div>
+
+              <!-- Git & GitHub → 50% -->
+              <div class="psk-skill-row">
+                <div class="psk-skill-meta">
+                  <span class="psk-skill-name">🐙 Git &amp; GitHub</span>
+                  <span class="psk-skill-level psk-level--intermediate">INTERMEDIATE</span>
+                </div>
+                <div class="psk-xp-track" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"
+                  aria-label="Git proficiency 50%">
+                  <div class="psk-xp-fill psk-xp-fill--green" data-width="50" style="width:0%">
+                    <span class="psk-xp-shimmer" aria-hidden="true"></span>
+                  </div>
+                  <span class="psk-xp-label">50 XP</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="psk-card-footer">
+              <p class="psk-footer-note">Expanding server-side logic, API endpoints & data processing workflows.</p>
+              <div class="psk-icon-badges" aria-hidden="true">
+                <span class="psk-icon-badge">📈</span>
+                <span class="psk-icon-badge">🏗️</span>
+                <span class="psk-icon-badge">🌳</span>
+                <span class="psk-icon-badge">🐙</span>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <!-- ─────────────────────────────────────────────────────── -->
+        <!-- SKILLS LEGEND: Proficiency Level Explanation           -->
+        <!-- ─────────────────────────────────────────────────────── -->
+        <div class="skills-legend" aria-label="Proficiency level legend">
+          <div class="skills-legend-header">
+            <span aria-hidden="true">🕹️</span> XP LEVEL LEGEND:
+          </div>
+          <div class="skills-legend-items">
+            <!-- Legend items explain what each color/label means -->
+            <div class="legend-item">
+              <span class="legend-dot legend-dot--pro"></span>
+              <span class="legend-label">PROFICIENT</span>
+              <span class="legend-range">80–100 XP</span>
+            </div>
+            <div class="legend-item">
+              <span class="legend-dot legend-dot--intermediate"></span>
+              <span class="legend-label">INTERMEDIATE</span>
+              <span class="legend-range">50–79 XP</span>
+            </div>
+            <div class="legend-item">
+              <span class="legend-dot legend-dot--basic"></span>
+              <span class="legend-label">BASICS / LEARNING</span>
+              <span class="legend-range">1–49 XP</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================= -->
+    <!-- TIMELINE SECTION                                        -->
+    <!-- Alternating card timeline: education, projects,        -->
+    <!-- career milestones with smooth hover CSS transitions    -->
+    <!-- ======================================================= -->
+    <section id="timeline" class="section timeline-section" aria-labelledby="timeline-title">
+      <div class="container">
+        <header class="section-header">
+          <p class="section-tag">03. Journey</p>
+          <h2 id="timeline-title" class="section-title">Education &amp; Milestones</h2>
+          <p class="section-subtitle">A chronological map of my academic path, key engineering projects, and career
+            aspirations.</p>
+        </header>
+
+        <!-- Central spine line + alternating event cards -->
+        <div class="tl-track" role="list">
+
+          <!-- Event 1: Present — Career Entry (LEFT) -->
+          <div class="tl-event tl-event--left" role="listitem">
+            <div class="tl-node tl-node--active" aria-hidden="true">
+              <span class="tl-node-pulse"></span>
+              <span class="tl-node-icon">&#x1F680;</span>
+            </div>
+            <div class="tl-year-chip tl-year-chip--active">2026 &mdash; Present</div>
+            <article class="tl-card tl-card--active">
+              <div class="tl-card-stripe tl-stripe--career"></div>
+              <div class="tl-card-body">
+                <span class="tl-category-label tl-cat--career">&#x1F3AF; Career Objective</span>
+                <h3 class="tl-card-title">Aspiring Software Engineer</h3>
+                <p class="tl-card-org">Open to Internships &amp; Entry-Level Roles</p>
+                <div class="tl-detail-row">
+                  <span class="tl-detail-chip tl-chip--green">&#x1F7E2; Available Now</span>
+                  <span class="tl-detail-chip">&#x1F4BC; Full-Time / Intern</span>
+                </div>
+                <p class="tl-card-desc">
+                  Actively seeking software development internships and entry-level engineering positions to apply
+                  strong foundations in Python, C, SQL, and Data Science to real-world products. Eager to collaborate,
+                  learn rapidly, and contribute from day one.
+                </p>
+                <div class="tl-tag-row">
+                  <span class="tl-tag">Python</span>
+                  <span class="tl-tag">C</span>
+                  <span class="tl-tag">SQL</span>
+                  <span class="tl-tag">Data Science</span>
+                  <span class="tl-tag">Open to Hire</span>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <!-- Event 2: B.E. Graduation (RIGHT) -->
+          <div class="tl-event tl-event--right" role="listitem">
+            <div class="tl-node" aria-hidden="true">
+              <span class="tl-node-icon">&#x1F393;</span>
+            </div>
+            <div class="tl-year-chip">2025 &ndash; 2029</div>
+            <article class="tl-card">
+              <div class="tl-card-stripe tl-stripe--edu"></div>
+              <div class="tl-card-body">
+                <span class="tl-category-label tl-cat--edu">&#x1F393; Degree</span>
+                <h3 class="tl-card-title">B.E. Computer Science &amp; Engineering</h3>
+                <p class="tl-card-org">Adichunchanagiri Institute of Technology, Chikkamagaluru</p>
+                <div class="tl-detail-row">
+                  <span class="tl-detail-chip tl-chip--accent">&#x2B50; CGPA: 7.8 / 10</span>
+                  <span class="tl-detail-chip">&#x1F52C; Data Science Specialisation</span>
+                </div>
+                <p class="tl-card-desc">
+                  Four-year engineering programme covering programming fundamentals, Data Structures &amp; Algorithms,
+                  DBMS, Operating Systems, Computer Networks, Data Science, and collaborative project development with
+                  industry-aligned labs.
+                </p>
+                <div class="tl-tag-row">
+                  <span class="tl-tag">DSA</span>
+                  <span class="tl-tag">DBMS</span>
+                  <span class="tl-tag">OOP</span>
+                  <span class="tl-tag">Data Science</span>
+                  <span class="tl-tag">OS</span>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <!-- Event 3: Academic Engineering Projects (LEFT) -->
+          <div class="tl-event tl-event--left" role="listitem">
+            <div class="tl-node" aria-hidden="true">
+              <span class="tl-node-icon">&#x2694;&#xFE0F;</span>
+            </div>
+            <div class="tl-year-chip" <article class="tl-card">2026</div>
+            <div class="tl-card-stripe tl-stripe--project"></div>
+            <div class="tl-card-body">
+              <span class="tl-category-label tl-cat--project">&#x2699;&#xFE0F; Projects</span>
+              <h3 class="tl-card-title">Collaborative Engineering Projects</h3>
+              <p class="tl-card-org">B.E. CSE Curriculum &mdash; AIT, Chikkamagaluru</p>
+              <div class="tl-detail-row">
+                <span class="tl-detail-chip">&#x1F465; Team Projects</span>
+                <span class="tl-detail-chip">&#x1F9EA; Lab &amp; Capstone</span>
+              </div>
+              <p class="tl-card-desc">
+                Worked in cross-functional student teams handling full project lifecycle: requirement analysis,
+                system
+                design, schema modelling, implementation in Python/SQL, testing, and live technical presentations to
+                faculty panels.
+              </p>
+              <div class="tl-tag-row">
+                <span class="tl-tag">Python</span>
+                <span class="tl-tag">SQL</span>
+                <span class="tl-tag">System Design</span>
+                <span class="tl-tag">Presentations</span>
+              </div>
+            </div>
+            </article>
+          </div>
+
+          <!-- Event 4: Data Science Exploration (RIGHT) -->
+          <div class="tl-event tl-event--right" role="listitem">
+            <div class="tl-node" aria-hidden="true">
+              <span class="tl-node-icon">&#x1F4CA;</span>
+            </div>
+            <div class="tl-year-chip">2026</div>
+            <article class="tl-card">
+              <div class="tl-card-stripe tl-stripe--project"></div>
+              <div class="tl-card-body">
+                <span class="tl-category-label tl-cat--project">&#x26A1; Learning Milestone</span>
+                <h3 class="tl-card-title">Data Analysis &amp; Predictive Exploration</h3>
+                <p class="tl-card-org">Self-Directed Learning &amp; Coursework</p>
+                <div class="tl-detail-row">
+                  <span class="tl-detail-chip">&#x1F40D; Python</span>
+                  <span class="tl-detail-chip">&#x1F4C8; Data Science</span>
+                </div>
+                <p class="tl-card-desc">
+                  Applied Python to clean, structure, and explore real datasets &mdash; discovering patterns through
+                  statistical analysis and extracting actionable insights aligned with Data Science engineering
+                  principles.
+                </p>
+                <div class="tl-tag-row">
+                  <span class="tl-tag">Python</span>
+                  <span class="tl-tag">Data Analysis</span>
+                  <span class="tl-tag">Statistics</span>
+                  <span class="tl-tag">Visualisation</span>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <!-- Event 5: 12th Grade (LEFT) -->
+          <div class="tl-event tl-event--left" role="listitem">
+            <div class="tl-node" aria-hidden="true">
+              <span class="tl-node-icon">&#x1F4DA;</span>
+            </div>
+            <div class="tl-year-chip">2023 &ndash; 2025</div>
+            <article class="tl-card">
+              <div class="tl-card-stripe tl-stripe--school"></div>
+              <div class="tl-card-body">
+                <span class="tl-category-label tl-cat--school">&#x1F3EB; Higher Secondary</span>
+                <h3 class="tl-card-title">12th Grade &mdash; Science Stream (PUC)</h3>
+                <p class="tl-card-org">Pre-University College, Karnataka</p>
+                <div class="tl-detail-row">
+                  <span class="tl-detail-chip">&#x1F4D0; Science Stream</span>
+                  <span class="tl-detail-chip">&#x1F511; CET Qualified</span>
+                </div>
+                <p class="tl-card-desc">
+                  Completed higher secondary education in the Science stream, building a strong foundation in
+                  career.
+                </p>
+                <div class="tl-tag-row">
+                  <span class="tl-tag">Mathematics</span>
+                  <span class="tl-tag">Physics</span>
+                  <span class="tl-tag">Biology</span>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <!-- Event 6: 10th SSLC (RIGHT) -->
+          <div class="tl-event tl-event--right" role="listitem">
+            <div class="tl-node" aria-hidden="true">
+              <span class="tl-node-icon">&#x1F3C6;</span>
+            </div>
+            <div class="tl-year-chip">2023</div>
+            <article class="tl-card">
+              <div class="tl-card-stripe tl-stripe--school"></div>
+              <div class="tl-card-body">
+                <span class="tl-category-label tl-cat--school">&#x1F3EB; Secondary School</span>
+                <h3 class="tl-card-title">10th Grade &mdash; SSLC Board Examination</h3>
+                <p class="tl-card-org">Karnataka Secondary Education Examination Board (KSEEB)</p>
+                <div class="tl-detail-row">
+                  <span class="tl-detail-chip tl-chip--accent">&#x2705; SSLC Passed</span>
+                  <span class="tl-detail-chip">&#x1F4D8; Karnataka Board</span>
+                </div>
+                <p class="tl-card-desc">
+                  Successfully completed the SSLC examinations, demonstrating consistent academic dedication and
+                  building core skills in Science, Mathematics and English required for higher studies and science
+                  specialisations.
+                </p>
+                <div class="tl-tag-row">
+                  <span class="tl-tag">SSLC</span>
+                  <span class="tl-tag">Karnataka Board</span>
+                  <span class="tl-tag">Foundation</span>
+                </div>
+              </div>
+            </article>
+          </div>
+
+        </div><!-- /.tl-track -->
+      </div>
+    </section>
+
+    <!-- ======================================================= -->
+    <!-- PROJECTS SECTION PLACEHOLDER -->
+    <!-- Placeholder: Academic & personal software engineering projects -->
+    <!-- ======================================================= -->
+    <section id="projects" class="section projects-section" aria-labelledby="projects-title">
+      <div class="container">
+        <header class="section-header">
+          <p class="section-tag">04. Engineering Work</p>
+          <h2 id="projects-title" class="section-title">Projects</h2>
+          <p class="section-subtitle">Academic and practical software engineering endeavors involving problem
+            identification, system development, and presentation.</p>
+        </header>
+
+        <d <!-- Project 3: Interactive Developer Portfolio -->
+          <article class="project-card">
+            <div class="project-preview-box">
+              <span class="project-icon">🌐</span>
+              <span class="project-type-tag">Web Application</span>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Personal Developer Portfolio Website</h3>
+              <p class="project-desc">
+                Engineered a responsive, accessible portfolio showcasing professional resume information, interactive
+                light/dark theme switching, smooth scrolling, and semantic HTML5 design.
+              </p>
+              <ul class="project-tags">
+                <li>HTML5 Semantic</li>
+                <li>Vanilla CSS</li>
+                <li>JavaScript</li>
+                <li>Responsive UI</li>
+              </ul>
+              <div class="project-links">
+                <a href="#hero" class="project-link">Live View (This Site) &rarr;</a>
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="project-link">GitHub
+                  Repository &rarr;</a>
+              </div>
+            </div>
+          </article>
+      </div>
+      </div>
+    </section>
+
+    <!-- ======================================================= -->
+    <!-- ACHIEVEMENTS SECTION PLACEHOLDER -->
+    <!-- Placeholder: Academic achievements and technical activities -->
+    <!-- ======================================================= -->
+    <section id="achievements" class="section achievements-section" aria-labelledby="achievements-title">
+      <div class="container">
+        <header class="section-header">
+          <p class="section-tag">05. Milestones</p>
+          <h2 id="achievements-title" class="section-title">Achievements & Activities</h2>
+        </header>
+
+        <div class="achievements-grid">
+          <article class="achievement-card">
+            <div class="achievement-icon">🏆</div>
+            <div class="achievement-content">
+              <h3>Academic Projects & Technical Activities</h3>
+              <p>
+                Actively participated in academic projects, engineering workshops, and technical events as part of the
+                Bachelor of Engineering curriculum at Adichunchanagiri Institute of Technology.
+              </p>
+              <span class="achievement-badge">Curriculum Distinction</span>
+            </div>
+          </article>
+
+          <article class="achievement-card">
+            <div class="achievement-icon">📈</div>
+            <div class="achievement-content">
+              <h3>Consistent Academic Excellence</h3>
+              <p>
+                Maintained a strong cumulative performance score of <strong>7.8 CGPA</strong> in B.E. Computer Science
+                and Engineering (Data Science).
+              </p>
+              <span class="achievement-badge">CGPA 7.8</span>
+            </div>
+          </article>
+
+          <article class="achievement-card">
+            <div class="achievement-icon">🚀</div>
+            <div class="achievement-content">
+              <h3>Continuous Self-Improvement</h3>
+              <p>
+                Consistently upskilling in frontend technologies, backend server architectures, and core software
+                engineering concepts to transition smoothly into the tech industry.
+              </p>
+              <span class="achievement-badge">Lifelong Learner</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================= -->
+    <!-- TESTIMONIALS SECTION -->
+    <!-- Academic mentor and project peer recommendations -->
+    <!-- ======================================================= -->
+    <section id="testimonials" class="section testimonials-section" aria-labelledby="testimonials-title">
+      <div class="container">
+        <header class="section-header">
+          <p class="section-tag">06. Endorsements</p>
+          <h2 id="testimonials-title" class="section-title">Testimonials</h2>
+          <p class="section-subtitle">Feedback and recognition from engineering professors, project guides, and academic
+            teammates.</p>
+        </header>
+
+        <div class="testimonials-grid">
+          <!-- Testimonial 1 -->
+          <article class="pixel-testimonial-card">
+            <div class="testimonial-header">
+              <span class="testimonial-avatar-bubble">🎓</span>
+              <div>
+                <h3 class="testimonial-author">Project Faculty Guide</h3>
+                <p class="testimonial-role">Department of CSE &bull; AIT Chikkamagaluru</p>
+              </div>
+            </div>
+            <div class="pixel-speech-bubble">
+              <p>
+                "Hasini demonstrated exceptional analytical rigor during academic project development. Her ability to
+                grasp complex data algorithms and translate requirements into clean code is commendable."
+              </p>
+            </div>
+            <div class="testimonial-rating">
+              <span class="pixel-star">★</span><span class="pixel-star">★</span><span class="pixel-star">★</span><span
+                class="pixel-star">★</span><span class="pixel-star">★</span>
+              <span class="rating-label">ACADEMIC RIGOR</span>
+            </div>
+          </article>
+
+          <!-- Testimonial 2 -->
+          <article class="pixel-testimonial-card">
+            <div class="testimonial-header">
+              <span class="testimonial-avatar-bubble">⚡</span>
+              <div>
+                <h3 class="testimonial-author">Engineering Peer & Teammate</h3>
+                <p class="testimonial-role">B.E. Final Year Project Collaborator</p>
+              </div>
+            </div>
+            <div class="pixel-speech-bubble">
+              <p>
+                "Working with Hasini on our engineering team was a fantastic experience. She is highly dependable,
+                dedicated to structured problem solving, and always eager to learn and support the team."
+              </p>
+            </div>
+            <div class="testimonial-rating">
+              <span class="pixel-star">★</span><span class="pixel-star">★</span><span class="pixel-star">★</span><span
+                class="pixel-star">★</span><span class="pixel-star">★</span>
+              <span class="rating-label">TEAMWORK</span>
+            </div>
+          </article>
+
+          <!-- Testimonial 3 -->
+          <article class="pixel-testimonial-card">
+            <div class="testimonial-header">
+              <span class="testimonial-avatar-bubble">💡</span>
+              <div>
+                <h3 class="testimonial-author">Technical Workshop Mentor</h3>
+                <p class="testimonial-role">Data Science & Programming Bootcamp</p>
+              </div>
+            </div>
+            <div class="pixel-speech-bubble">
+              <p>
+                "Hasini has a strong grasp of foundational programming concepts in Python and SQL. Her active curiosity
+                and prompt turnaround on assignments reflect her high potential as an entry-level software engineer."
+              </p>
+            </div>
+            <div class="testimonial-rating">
+              <span class="pixel-star">★</span><span class="pixel-star">★</span><span class="pixel-star">★</span><span
+                class="pixel-star">★</span><span class="pixel-star">★</span>
+              <span class="rating-label">QUICK LEARNER</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================= -->
+    <!-- INTERACTIVE CHAT SECTION -->
+    <!-- Simulated 8-bit Pixel Terminal & Instant FAQ Chat -->
+    <!-- ======================================================= -->
+    <section id="chat" class="section chat-section" aria-labelledby="chat-title">
+      <div class="container">
+        <header class="section-header">
+          <p class="section-tag">07. Interactive Dialogue</p>
+          <h2 id="chat-title" class="section-title">Pixel Chat Terminal</h2>
+          <p class="section-subtitle">Ask questions or select quick prompts to learn more about Hasini's background and
+            availability.</p>
+        </header>
+
+        <div class="pixel-chat-terminal">
+          <!-- Terminal Top Title Bar -->
+          <div class="chat-terminal-header">
+            <div class="chat-terminal-title">
+              <span class="pixel-terminal-icon">👾</span> HASINI_BOT v1.0 // TERMINAL CHAT
+            </div>
+            <div class="chat-terminal-dots">
+              <span class="terminal-dot red"></span>
+              <span class="terminal-dot yellow"></span>
+              <span class="terminal-dot green"></span>
+            </div>
+          </div>
+
+          <!-- Chat Messages Scroll Container -->
+          <div class="chat-messages-container" id="chat-messages" role="log" aria-live="polite">
+            <div class="chat-msg bot-msg">
+              <div class="msg-avatar">🤖</div>
+              <div class="msg-bubble">
+                <span class="msg-sender">HASINI_BOT:</span>
+                <p>Hello! Welcome to Hasini's portfolio. I'm her virtual assistant. Click a topic below or type a
+                  question to get instant information!</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Quick Interactive Question Chips -->
+          <div class="chat-quick-prompts" aria-label="Suggested Questions">
+            <button class="chat-prompt-chip" data-question="skills" type="button">💻 Tech Skills?</button>
+            <button class="chat-prompt-chip" data-question="roles" type="button">💼 Open Roles?</button>
+            <button class="chat-prompt-chip" data-question="education" type="button">🎓 Degree & CGPA?</button>
+            <button class="chat-prompt-chip" data-question="resume" type="button">📄 Download Resume?</button>
+          </div>
+
+          <!-- Chat Input Form -->
+          <form class="chat-input-form" id="chat-form">
+            <label for="chat-user-input" class="sr-only">Type a message</label>
+            <div class="chat-input-group">
+              <span class="chat-input-prefix">&gt;</span>
+              <input type="text" id="chat-user-input" class="chat-input-field"
+                placeholder="Type a message (e.g., 'contact', 'skills', 'hello')..." autocomplete="off">
+              <button type="submit" class="pixel-btn chat-send-btn" aria-label="Send Message">SEND ↵</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================= -->
+    <!-- CONTACT SECTION PLACEHOLDER -->
+    <!-- Placeholder: Contact form, phone, email & social channels -->
+    <!-- ======================================================= -->
+    <section id="contact" class="section contact-section" aria-labelledby="contact-title">
+      <div class="container">
+        <header class="section-header">
+          <p class="section-tag">08. Get In Touch</p>
+          <h2 id="contact-title" class="section-title">Contact Me</h2>
+          <p class="section-subtitle">Have an opening, internship, or question? Feel free to reach out directly!</p>
+        </header>
+
+        <div class="contact-wrapper">
+          <!-- Direct Contact Information -->
+          <div class="contact-info">
+            <h3 class="contact-info-title">Let's Connect</h3>
+            <p class="contact-intro">
+              I am actively seeking software engineering internships and entry-level positions. Whether you want to
+              discuss a role, collaboration, or have any questions about my academic work, my inbox is always open.
+            </p>
+
+            <ul class="contact-details-list">
+              <li>
+                <div class="contact-icon-bubble">📧</div>
+                <div>
+                  <strong>Email</strong>
+                  <a href="mailto:hasinisuresh2979@gmail.com">hasinisuresh2979@gmail.com</a>
+                </div>
+              </li>
+              <li>
+                <div class="contact-icon-bubble">📱</div>
+                <div>
+                  <strong>Phone</strong>
+                  <a href="tel:+919036138340">+91 9036138340</a>
+                </div>
+              </li>
+              <li>
+                <div class="contact-icon-bubble">🔗</div>
+                <div>
+                  <strong>LinkedIn</strong>
+                  <a href="https://linkedin.com/in/hasini-suresh-9b97a1380" target="_blank"
+                    rel="noopener noreferrer">linkedin.com/in/hasini-suresh-9b97a1380</a>
+                </div>
+              </li>
+              <li>
+                <div class="contact-icon-bubble">🐙</div>
+                <div>
+                  <strong>GitHub</strong>
+                  <a href="https://github.com" target="_blank" rel="noopener noreferrer">github.com (Hasini S)</a>
+                </div>
+              </li>
+            </ul>
+
+            <div class="resume-download-card">
+              <h4>Interested in my complete profile?</h4>
+              <p>Download my resume in PDF format to review full academic details and qualifications.</p>
+              <a href="Hasini_Resume.pdf" class="btn btn-primary" download>Download Hasini's Resume (PDF) 📄</a>
+            </div>
+          </div>
+
+          <!-- Contact Form Placeholder -->
+          <form class="contact-form" id="contact-form" action="#" method="POST">
+            <h3 class="form-title">Send a Message</h3>
+            <div class="form-group">
+              <label for="contact-name">Your Name</label>
+              <input type="text" id="contact-name" name="name" required placeholder="Recruiter / Engineer Name">
+            </div>
+
+            <div class="form-group">
+              <label for="contact-email">Your Email</label>
+              <input type="email" id="contact-email" name="email" required placeholder="recruiter@company.com">
+            </div>
+
+            <div class="form-group">
+              <label for="contact-subject">Subject</label>
+              <input type="text" id="contact-subject" name="subject" required
+                placeholder="Internship / Job Opportunity / Inquiry">
+            </div>
+
+            <div class="form-group">
+              <label for="contact-message">Message</label>
+              <textarea id="contact-message" name="message" rows="5" required
+                placeholder="Write your message here..."></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary submit-btn">Send Message 🚀</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========================================================= -->
+  <!-- FOOTER -->
+  <!-- Semantic footer with copyright, links, and back-to-top -->
+  <!-- ========================================================= -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <div class="footer-left">
+        <p class="footer-title"><strong>Hasini S</strong> &bull; Aspiring Software Engineer</p>
+        <p class="footer-subtext">&copy; <span id="current-year">2026</span> Hasini S. B.E. Computer Science &
+          Engineering (Data Science). All rights reserved.</p>
+      </div>
+
+      <div class="footer-right">
+        <div class="footer-social-links">
+          <a href="mailto:hasinisuresh2979@gmail.com" aria-label="Email Hasini">Email</a>
+          <a href="https://linkedin.com/in/hasini-suresh-9b97a1380" target="_blank" rel="noopener noreferrer"
+            aria-label="LinkedIn Profile">LinkedIn</a>
+          <a href="https://github.com" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile">GitHub</a>
+          <a href="Hasini_Resume.pdf" download aria-label="Download Resume PDF">Resume</a>
+        </div>
+        <a href="#hero" class="back-to-top" aria-label="Back to top of page">&uarr; Back to Top</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="script.js"></script>
+</body>
+
+</html>
